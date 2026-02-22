@@ -1,6 +1,6 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "hoss-claude-skills",
+  "name": "claude-skills",
   "description": "Custom Claude Code skills for productivity workflows",
   "owner": {
     "name": "Hoss",
@@ -17,7 +17,7 @@
       },
       "source": "./plugins/distill",
       "category": "productivity",
-      "homepage": "https://github.com/CJHwong/hoss-claude-skills/tree/main/plugins/sort-later"
+      "homepage": "https://github.com/CJHwong/claude-skills/tree/main/plugins/distill"
     },
     {
       "name": "agents-md-skill",
@@ -29,7 +29,7 @@
       },
       "source": "./plugins/agents-md-skill",
       "category": "productivity",
-      "homepage": "https://github.com/CJHwong/hoss-claude-skills/tree/main/plugins/agents-md-skill"
+      "homepage": "https://github.com/CJHwong/claude-skills/tree/main/plugins/agents-md-skill"
     }
   ]
 }
