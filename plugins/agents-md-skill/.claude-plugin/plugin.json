@@ -1,0 +1,5 @@
+{
+  "name": "agents-md-skill",
+  "description": "Create or improve AGENTS.md, CLAUDE.md, and similar context files for coding agents. Based on empirical research showing most auto-generated context files hurt agent performance.",
+  "version": "1.0.0"
+}

@@ -18,6 +18,18 @@
       "source": "./plugins/distill",
       "category": "productivity",
       "homepage": "https://github.com/CJHwong/hoss-claude-skills/tree/main/plugins/sort-later"
+    },
+    {
+      "name": "agents-md-skill",
+      "description": "Write AGENTS.md / CLAUDE.md files that actually help coding agents. Most auto-generated ones make agents worse (arXiv:2602.11988v1). This skill knows what to keep and what to cut.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Hoss",
+        "email": "CJHwong@gmail.com"
+      },
+      "source": "./plugins/agents-md-skill",
+      "category": "productivity",
+      "homepage": "https://github.com/CJHwong/hoss-claude-skills/tree/main/plugins/agents-md-skill"
     }
   ]
 }
