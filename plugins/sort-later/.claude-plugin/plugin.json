@@ -1,0 +1,5 @@
+{
+  "name": "sort-later",
+  "description": "Organize messy bookmarks into markdown notes (articles) and browser-importable HTML (functional sites). Works with any bookmark source — browser exports, Pocket, Raindrop, Instapaper, plain URL lists, or anything else.",
+  "version": "1.0.0"
+}

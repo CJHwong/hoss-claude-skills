@@ -1,0 +1,23 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "hoss-claude-skills",
+  "description": "Custom Claude Code skills for productivity workflows",
+  "owner": {
+    "name": "Hoss",
+    "email": "CJHwong@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "distill",
+      "description": "Distill insights from browser bookmarks/history, Pocket/Raindrop exports, or URL lists into an Obsidian vault. Scales to 76K+ URLs via domain triage, curl-based scraping, and model routing (haiku for triage, sonnet for classification).",
+      "version": "1.0.0",
+      "author": {
+        "name": "Hoss",
+        "email": "CJHwong@gmail.com"
+      },
+      "source": "./plugins/distill",
+      "category": "productivity",
+      "homepage": "https://github.com/CJHwong/hoss-claude-skills/tree/main/plugins/sort-later"
+    }
+  ]
+}
