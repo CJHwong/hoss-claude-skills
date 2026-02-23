@@ -21,8 +21,8 @@
     },
     {
       "name": "agents-md-skill",
-      "description": "Write AGENTS.md / CLAUDE.md files that actually help coding agents. Most auto-generated ones make agents worse (arXiv:2602.11988v1). This skill knows what to keep and what to cut.",
-      "version": "1.0.0",
+      "description": "Write lean, effective agent instructions — context files (AGENTS.md, CLAUDE.md) and slash commands. Most auto-generated ones make agents worse (arXiv:2602.11988v1). This skill knows what to keep and what to cut.",
+      "version": "1.1.0",
       "author": {
         "name": "Hoss",
         "email": "CJHwong@gmail.com"

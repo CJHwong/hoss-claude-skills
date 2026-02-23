@@ -19,5 +19,5 @@ Then install the plugins you want:
 
 | Plugin | Description |
 |--------|-------------|
-| [agents-md-skill](plugins/agents-md-skill) | Write AGENTS.md / CLAUDE.md files that actually help coding agents |
+| [agents-md-skill](plugins/agents-md-skill) | Write lean agent instructions — context files (AGENTS.md, CLAUDE.md) and slash commands |
 | [sort-later](plugins/sort-later) | Organize bookmarks into Obsidian notes and browser bookmark files |
