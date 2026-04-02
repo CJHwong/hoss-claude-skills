@@ -1,0 +1,4 @@
+Verdict: insight (high)
+Summary: People systematically overestimate their understanding of complex fields due to the illusion of explanatory depth, and even domain experts fall victim when crossing sub-specialization boundaries.
+Concepts: cognitive-biases, expertise, epistemology
+Topic: cognitive-biases

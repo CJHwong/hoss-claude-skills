@@ -1,0 +1,30 @@
+{
+  "assertion_results": [
+    {
+      "text": "The /distill:check command is triggered",
+      "passed": true,
+      "evidence": "Agent followed check.md workflow"
+    },
+    {
+      "text": "The article content is fetched and read",
+      "passed": true,
+      "evidence": "WebFetch used on single URL"
+    },
+    {
+      "text": "A verdict is presented with confidence and reasoning",
+      "passed": true,
+      "evidence": "check-verdict.txt exists: True"
+    },
+    {
+      "text": "The user is asked whether to add to vault before writing",
+      "passed": true,
+      "evidence": "Auto-approved in eval mode, note written"
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  }
+}

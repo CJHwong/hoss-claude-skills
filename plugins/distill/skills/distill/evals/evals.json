@@ -1,0 +1,44 @@
+{
+  "skill_name": "distill",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I have a Pocket export CSV at evals/files/pocket-sample.csv with 10 articles. Distill the insights and save to evals/files/test-vault-1/.",
+      "expected_output": "A vault with insight notes for genuinely insightful articles, noise entries in _noise.md, and a .distill-state.yaml file.",
+      "files": ["evals/files/pocket-sample.csv"],
+      "assertions": [
+        "The skill triggers from a Pocket export mention",
+        "Scraping uses curl (scripts/scrape.py), not WebFetch",
+        "Text extraction uses scripts/extract_text.py",
+        "Classification uses Sonnet model, not the session model",
+        "Each insight note has YAML frontmatter with url, title, source: pocket-export, confidence, insight_summary, and concepts",
+        "Noise articles are listed in _noise.md, not given individual notes",
+        "Insight rate is between 10-40% of classifiable articles"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Check this article for me: https://danluu.com/cocktail-ideas/",
+      "expected_output": "The skill fetches the URL, classifies it as insight or noise with reasoning, and asks whether to add to vault.",
+      "files": [],
+      "assertions": [
+        "The /distill:check command is triggered",
+        "The article content is fetched and read",
+        "A verdict is presented with confidence level and reasoning",
+        "The user is asked whether to add to vault before writing anything"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "hey can you go through my browser bookmarks and find anything worth keeping? save to evals/files/test-vault-3/",
+      "expected_output": "The skill asks which browser to use, detects installed browsers, and runs the full pipeline.",
+      "files": [],
+      "assertions": [
+        "The skill asks the user which browser/source to process",
+        "Browser auto-detection is attempted",
+        "Domain triage uses the domain cache",
+        "The pipeline follows the 8-phase structure from SKILL.md"
+      ]
+    }
+  ]
+}
