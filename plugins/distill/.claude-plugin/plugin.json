@@ -1,0 +1,5 @@
+{
+  "name": "distill",
+  "description": "Periodic pipeline that distills insights from Zen browser bookmarks/history, classifies articles vs noise with LLM reasoning, and exports tagged notes to an Obsidian vault.",
+  "version": "1.0.0"
+}

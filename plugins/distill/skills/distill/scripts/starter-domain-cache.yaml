@@ -1,0 +1,131 @@
+# Starter domain cache for common domains.
+# Copy to your vault as domain-cache.yaml on first run.
+# The skill will add new domains as it encounters them.
+domains:
+  # --- TOOL: Google ---
+  google.com: tool
+  docs.google.com: tool
+  mail.google.com: tool
+  calendar.google.com: tool
+  meet.google.com: tool
+  drive.google.com: tool
+  accounts.google.com: tool
+  translate.google.com: tool
+  console.cloud.google.com: tool
+  analytics.google.com: tool
+  admin.google.com: tool
+  myaccount.google.com: tool
+  support.google.com: tool
+  keep.google.com: tool
+
+  # --- TOOL: Media/Streaming ---
+  youtube.com: tool
+  music.youtube.com: tool
+  netflix.com: tool
+  spotify.com: tool
+  twitch.tv: tool
+
+  # --- TOOL: Social ---
+  facebook.com: tool
+  twitter.com: tool
+  x.com: tool
+  instagram.com: tool
+  linkedin.com: tool
+  threads.com: tool
+  tiktok.com: tool
+
+  # --- TOOL: Chat/Messaging ---
+  slack.com: tool
+  discord.com: tool
+  telegram.org: tool
+  web.telegram.org: tool
+
+  # --- TOOL: Dev tools ---
+  console.aws.amazon.com: tool
+  portal.azure.com: tool
+  app.netlify.com: tool
+  vercel.com: tool
+  app.circleci.com: tool
+  app.travis-ci.com: tool
+
+  # --- TOOL: AI dashboards ---
+  chatgpt.com: tool
+  chat.openai.com: tool
+  platform.openai.com: tool
+  claude.ai: tool
+  console.anthropic.com: tool
+  gemini.google.com: tool
+
+  # --- TOOL: Productivity ---
+  notion.so: tool
+  trello.com: tool
+  asana.com: tool
+  linear.app: tool
+  figma.com: tool
+  miro.com: tool
+  excalidraw.com: tool
+
+  # --- TOOL: Package registries ---
+  pypi.org: tool
+  npmjs.com: tool
+  crates.io: tool
+  rubygems.org: tool
+
+  # --- TOOL: Reference/docs (not articles) ---
+  docs.python.org: tool
+  docs.djangoproject.com: tool
+  developer.mozilla.org: tool
+  docs.rs: tool
+  pkg.go.dev: tool
+  docs.oracle.com: tool
+
+  # --- ARTICLE-SOURCE: Tech blogs ---
+  simonwillison.net: article-source
+  martinfowler.com: article-source
+  danluu.com: article-source
+  jvns.ca: article-source
+  brooker.co.za: article-source
+  paulgraham.com: article-source
+  joelonsoftware.com: article-source
+  blog.codinghorror.com: article-source
+  rachelbythebay.com: article-source
+  brandur.org: article-source
+  fasterthanli.me: article-source
+  without.boats: article-source
+  matklad.github.io: article-source
+  ciechanow.ski: article-source
+  samwho.dev: article-source
+  benhoyt.com: article-source
+  justine.lol: article-source
+  eli.thegreenplace.net: article-source
+  blog.pragmaticengineer.com: article-source
+  research.swtch.com: article-source
+
+  # --- ARTICLE-SOURCE: Publications ---
+  arxiv.org: article-source
+  lwn.net: article-source
+  arstechnica.com: article-source
+  thenewstack.io: article-source
+  infoq.com: article-source
+
+  # --- ARTICLE-SOURCE: Company engineering blogs ---
+  engineering.fb.com: article-source
+  netflixtechblog.com: article-source
+  blog.cloudflare.com: article-source
+  blog.google: article-source
+  aws.amazon.com/blogs: article-source
+  discord.com/blog: article-source
+  stripe.com/blog: article-source
+  uber.com/blog: article-source
+  anthropic.com: article-source
+  openai.com: article-source
+
+  # --- MIXED ---
+  github.com: mixed
+  medium.com: mixed
+  dev.to: mixed
+  news.ycombinator.com: mixed
+  reddit.com: mixed
+  stackoverflow.com: mixed
+  huggingface.co: mixed
+  substack.com: mixed
