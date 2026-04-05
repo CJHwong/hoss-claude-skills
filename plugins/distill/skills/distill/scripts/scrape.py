@@ -14,7 +14,6 @@ Output: One file per URL in output-dir, named by MD5 hash of URL.
 import json
 import subprocess
 import os
-import sys
 import hashlib
 import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed

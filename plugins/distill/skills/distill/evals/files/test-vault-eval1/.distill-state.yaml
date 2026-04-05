@@ -1,6 +1,0 @@
-last_run: 2026-04-02T00:00:00
-vault_path: /Users/hoss/Workspace/_side_proj/claude-skills/plugins/distill/skills/distill/evals/files/test-vault-eval1
-source:
-  type: file
-  format: pocket-csv
-  file_path: evals/files/pocket-sample.csv

@@ -17,7 +17,6 @@ Output:
 
 import json
 import os
-import sys
 import argparse
 from html.parser import HTMLParser
 
