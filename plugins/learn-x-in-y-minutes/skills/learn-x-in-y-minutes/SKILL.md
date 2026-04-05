@@ -42,7 +42,7 @@ The format varies by category. Read the matching example before generating.
 ### Languages & Frameworks/Libraries
 **Code-first**: short prose intro outside the code block, then one big fenced code block for the whole tutorial. Section dividers are comment-style inside the code — no markdown headers.
 
-```
+~~~
 ---
 name: {Name}
 filename: learn{repo}.{ext}
@@ -73,7 +73,7 @@ brew install {tool}        # => installs {tool}
 # Further Reading
 # - Repository: {url}
 ```
-```
+~~~
 
 ### Tools (git-style)
 **Prose + per-command code blocks**: markdown `## Section` headers, short explanatory paragraphs, then a fenced block per command group. No single mega code block. See `examples/git.md`.
