@@ -10,7 +10,7 @@
     {
       "name": "distill",
       "description": "Distill insights from browser bookmarks/history, Pocket/Raindrop exports, or URL lists into an Obsidian vault. Scales to 76K+ URLs via domain triage, curl-based scraping, and model routing (haiku for triage, sonnet for classification).",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Hoss",
         "email": "CJHwong@gmail.com"
@@ -18,6 +18,18 @@
       "source": "./plugins/distill",
       "category": "productivity",
       "homepage": "https://github.com/CJHwong/claude-skills/tree/main/plugins/distill"
+    },
+    {
+      "name": "learn-x-in-y-minutes",
+      "description": "Generate a learnxinyminutes.com-style tutorial for anything: a CLI command, language, library, framework, algorithm, concept, or GitHub repo.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Hoss",
+        "email": "CJHwong@gmail.com"
+      },
+      "source": "./plugins/learn-x-in-y-minutes",
+      "category": "productivity",
+      "homepage": "https://github.com/CJHwong/claude-skills/tree/main/plugins/learn-x-in-y-minutes"
     },
     {
       "name": "agents-md-skill",

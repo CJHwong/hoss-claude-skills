@@ -1,0 +1,5 @@
+{
+  "name": "learn-x-in-y-minutes",
+  "description": "Generate a learnxinyminutes.com-style tutorial for anything: a CLI command, language, library, framework, algorithm, concept, or GitHub repo.",
+  "version": "1.0.0"
+}

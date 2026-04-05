@@ -1,0 +1,49 @@
+{
+  "skill_name": "learn-x-in-y-minutes",
+  "evals": [
+    {
+      "id": 1,
+      "name": "python-library-github",
+      "prompt": "Generate a learnxinyminutes tutorial for https://github.com/anthropics/anthropic-sdk-python",
+      "expected_output": "A Learn X in Y Minutes style tutorial with YAML frontmatter, sections for introduction/installation/core API/usage, and Python code examples from the actual SDK.",
+      "files": [],
+      "assertions": [
+        "Output has YAML frontmatter with 'language' field set to 'python'",
+        "Output has 'filename' field ending in '.py'",
+        "Output includes '## Introduction' section",
+        "Output includes installation instructions",
+        "Output includes at least one code example",
+        "Code example uses actual API from the SDK (e.g., Anthropic class, messages.create)",
+        "Output ends with 'Further Reading' section"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "local-repo",
+      "prompt": "Generate a learnxinyminutes tutorial for the current directory",
+      "expected_output": "A Learn X in Y Minutes style tutorial for the learn_repo_in_minutes project, showing the FastAPI app structure and tutorial generation flow.",
+      "files": [],
+      "assertions": [
+        "Output has YAML frontmatter",
+        "Output identifies the project as Python/FastAPI",
+        "Output mentions the coordinator agent or tutorial generation pipeline",
+        "Output includes code examples from the actual codebase",
+        "Sections are appropriate for a web framework/library project"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "cli-tool-github",
+      "prompt": "Create a learnxinyminutes guide for https://github.com/cli/cli (GitHub CLI)",
+      "expected_output": "A Learn X in Y Minutes style tutorial for GitHub CLI with sections for installation, basic commands, and common workflows.",
+      "files": [],
+      "assertions": [
+        "Output has YAML frontmatter",
+        "Output identifies the project as a CLI tool",
+        "Output includes 'gh' command examples",
+        "Output covers basic commands like 'gh repo', 'gh pr'",
+        "Sections follow CLI tool template: Introduction, Installation, Basic Commands, Advanced Usage"
+      ]
+    }
+  ]
+}
