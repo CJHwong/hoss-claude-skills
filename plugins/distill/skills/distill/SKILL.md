@@ -1,11 +1,11 @@
 ---
 name: distill
-description: Distill insights from browser bookmarks/history, bookmark exports, URL lists, or read-later services into an Obsidian-compatible knowledge base. Use this skill when a user mentions extracting insights from browsing history, building a knowledge base from bookmarks, organizing saved links, processing a Pocket/Raindrop export, sorting through URLs, or distilling articles.
+description: Distill insights from any URL data source — browser history, bookmark exports, CSV/JSON dumps, URL lists, or read-later services — into an Obsidian-compatible knowledge base. Use this skill when a user mentions extracting insights from browsing history, building a knowledge base from bookmarks, organizing saved links, processing a Pocket/Raindrop/CSV export, sorting through URLs, or distilling articles from any source.
 ---
 
 # Distill
 
-Distill insights from any collection of URLs into a growing Obsidian-compatible knowledge base. Works with browser history, bookmark exports, read-later services, or plain URL lists.
+Distill insights from any collection of URLs into a growing Obsidian-compatible knowledge base. Works with browser history, bookmark exports, read-later service exports, CSV/JSON dumps, or plain URL lists.
 
 Two outputs per run:
 1. **Insight notes** in `{topic}/` folders with YAML frontmatter, key takeaways, and concept tags.
@@ -21,9 +21,10 @@ Two outputs per run:
 | **Safari** | Read `History.db` | `references/browser-schemas.md` (Safari schema) |
 | **Bookmark HTML export** | User provides file path | Parse Netscape bookmark format |
 | **Pocket / Raindrop / Instapaper export** | User provides CSV/JSON file | Parse export format |
+| **CSV / JSON URL dump** | User provides file path | Read rows with `url` column or key |
 | **Plain URL list** | User provides text file or pastes URLs | One URL per line |
 
-On first run, ask the user what source to use. If they just say "my bookmarks" or "my history," auto-detect installed browsers and ask which one.
+On first run, use `AskUserQuestion` to ask what source to process and where the vault lives. If they just say "my bookmarks" or "my history," auto-detect installed browsers and present options alongside file-based sources.
 
 ## How This Works
 

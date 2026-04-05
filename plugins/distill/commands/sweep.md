@@ -1,5 +1,5 @@
 ---
-description: Run the full insight extraction pipeline on new Zen browser bookmarks/history
+description: Run the full insight extraction pipeline on any URL data source (browser history, bookmark export, CSV/URL dump)
 argument-hint: [optional: vault-path] [optional: since-date]
 allowed-tools:
   - Read
@@ -28,10 +28,12 @@ Read these before starting:
 
 ### Phase 1: Identify Source + Extract
 
-1. Read `.distill-state.yaml` from the vault. If it exists, use saved source config.
-2. If first run or no state file: ask the user what to process. Auto-detect installed browsers by checking profile paths from `references/browser-schemas.md`. Present options.
+1. Read `.distill-state.yaml` from the vault (path from `$1` or current dir). If it exists, use saved source config and skip to step 3.
+2. **First run (no state file):** Use `AskUserQuestion` to gather:
+   - **Source:** What data source to process. Auto-detect installed browsers by checking profile paths from `references/browser-schemas.md`. Present all detected options plus file-based options (bookmark HTML, CSV export, URL list, Pocket/Raindrop/Instapaper export).
+   - **Vault path:** Where to write the Obsidian notes (if not provided as `$1`).
 3. For browser sources: copy DB files to `/tmp/distill-workdir/`, query bookmarks + history using the appropriate schema. Mind the timestamp format differences per browser.
-4. For file sources: read the provided file (HTML bookmarks, CSV export, URL list).
+4. For file sources: read the provided file (HTML bookmarks, CSV export, URL list, JSON export).
 5. Output: `/tmp/distill-workdir/candidates.json` as normalized `[{url, title, source, date}]`.
 6. Deduplicate by normalized URL against existing vault notes.
 
